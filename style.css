@@ -1,3 +1,6 @@
+/* ---------------------------
+  GENERAL RESET
+---------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +14,67 @@ body {
   line-height: 1.6;
 }
 
-/* HERO */
+/* ---------------------------
+  ANNOUNCEMENT BAR
+---------------------------- */
+.announcement-bar {
+  background: #c89b3c;
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  padding: 12px 0;
+  font-size: 0.95rem;
+}
+
+/* ---------------------------
+  HEADER
+---------------------------- */
+header {
+  position: sticky;
+  top: 0;
+  background: #111;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #c89b3c;
+}
+
+header nav a {
+  color: #eaeaea;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #c89b3c;
+}
+
+.btn-header {
+  background: #c89b3c;
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+/* ---------------------------
+  HERO SECTION
+---------------------------- */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -45,7 +105,7 @@ body {
   color: #d1d1d1;
 }
 
-/* BUTTON */
+/* BUTTONS */
 .btn-primary {
   display: inline-block;
   padding: 14px 32px;
@@ -62,7 +122,9 @@ body {
   transform: translateY(-2px);
 }
 
-/* SECTIONS */
+/* ---------------------------
+  SECTIONS
+---------------------------- */
 .section {
   padding: 80px 10%;
   text-align: center;
@@ -87,6 +149,16 @@ body {
   margin: 0 auto 15px;
 }
 
+.section ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.section ul li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
 /* GRID */
 .grid {
   display: grid;
@@ -95,22 +167,12 @@ body {
   align-items: center;
 }
 
-.grid ul {
-  list-style: none;
-  text-align: left;
-}
-
-.grid li {
-  margin-bottom: 10px;
-  font-size: 1.05rem;
-}
-
 .grid img {
   width: 100%;
   border-radius: 14px;
 }
 
-/* CTA */
+/* CTA SECTION */
 .cta {
   background: linear-gradient(135deg, #111, #1f1f1f);
   padding: 80px 10%;
@@ -138,7 +200,9 @@ footer {
   color: #777;
 }
 
-/* ANIMATIONS */
+/* ---------------------------
+  ANIMATIONS
+---------------------------- */
 .fade-in {
   animation: fadeIn 1.2s ease forwards;
 }
@@ -148,21 +212,28 @@ footer {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------------------
+  RESPONSIVE
+---------------------------- */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .section {
+    padding: 60px 5%;
+  }
+
+  header nav a {
+    margin-left: 10px;
   }
 }
