@@ -24,8 +24,8 @@ body {
 .overlay {
     min-height: 95vh;
     background: linear-gradient(
-        rgba(15, 32, 39, 0.8),
-        rgba(15, 32, 39, 0.8)
+        rgba(16, 30, 45, 0.82),
+        rgba(16, 30, 45, 0.82)
     );
     display: flex;
     align-items: center;
@@ -33,14 +33,14 @@ body {
 
 /* ================= CONTENT ================= */
 .content {
-    max-width: 760px;
+    max-width: 780px;
     padding: 40px 20px;
     margin-left: 8%;
     color: #ffffff;
 }
 
 /* ================= TRUST LINE ================= */
-.trust {
+.trust-line {
     font-size: 14px;
     letter-spacing: 0.4px;
     opacity: 0.9;
@@ -58,12 +58,12 @@ h1 span {
     color: #fbbf24;
 }
 
-/* ================= HISTORY HIGHLIGHT ================= */
+/* ================= HISTORY BOX ================= */
 .history-box {
     background: rgba(255, 255, 255, 0.12);
     border-left: 5px solid #fbbf24;
     padding: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     border-radius: 4px;
 }
 
@@ -71,24 +71,40 @@ h1 span {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 12px;
-    color: #ffffff;
 }
 
-.history-box .emphasis {
+.history-emphasis {
     font-weight: 600;
     color: #fbbf24;
     margin-bottom: 0;
 }
 
-/* ================= BONUS ================= */
-.bonus {
-    font-size: 16px;
-    margin-bottom: 26px;
-    opacity: 0.95;
+/* ================= BONUS BOX ================= */
+.bonus-box {
+    background: rgba(255, 255, 255, 0.18);
+    border: 2px dashed rgba(251, 191, 36, 0.9);
+    padding: 18px 22px;
+    margin-bottom: 28px;
+    border-radius: 6px;
 }
 
-/* ================= CTA ================= */
-.cta {
+.bonus-box h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #fbbf24;
+}
+
+.bonus-box ul {
+    list-style: none;
+}
+
+.bonus-box li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* ================= CTA BUTTON ================= */
+.cta-button {
     display: inline-block;
     background-color: #8b1e24;
     color: #ffffff;
@@ -99,12 +115,12 @@ h1 span {
     transition: 0.3s ease;
 }
 
-.cta:hover {
+.cta-button:hover {
     background-color: #a3262c;
 }
 
-/* ================= NOTE ================= */
-.note {
+/* ================= CTA NOTE ================= */
+.cta-note {
     font-size: 14px;
     margin-top: 12px;
     opacity: 0.85;
@@ -137,6 +153,10 @@ h1 span {
 
     .history-box p {
         font-size: 16px;
+    }
+
+    .bonus-box {
+        text-align: left;
     }
 
     .trust-strip {
