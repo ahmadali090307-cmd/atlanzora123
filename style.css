@@ -7,14 +7,14 @@
 }
 
 body {
-    background-color: #f5f6f2;
+    background-color: #f4f6f8;
     color: #1f2933;
 }
 
-/* ================= HERO BANNER SECTION ================= */
+/* ================= HERO BANNER ================= */
 .hero-banner {
-    min-height: 90vh;
-    background-image: url("https://cdn.pixabay.com/photo/2019/12/19/09/04/monument-valley-4701234_1280.jpg");
+    min-height: 92vh;
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -22,10 +22,10 @@ body {
 
 /* ================= HERO OVERLAY ================= */
 .hero-overlay {
-    min-height: 90vh;
+    min-height: 92vh;
     background: linear-gradient(
-        rgba(20, 33, 28, 0.78),
-        rgba(20, 33, 28, 0.78)
+        rgba(18, 32, 47, 0.78),
+        rgba(18, 32, 47, 0.78)
     );
     display: flex;
     align-items: center;
@@ -33,7 +33,7 @@ body {
 
 /* ================= HERO CONTENT ================= */
 .hero-content {
-    max-width: 720px;
+    max-width: 760px;
     padding: 40px 20px;
     margin-left: 8%;
     color: #ffffff;
@@ -42,46 +42,46 @@ body {
 /* ================= TRUST LINE ================= */
 .trust-line {
     font-size: 14px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     opacity: 0.9;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 /* ================= HEADLINE ================= */
 .hero-content h1 {
-    font-size: 42px;
-    line-height: 1.2;
+    font-size: 44px;
+    line-height: 1.15;
     margin-bottom: 20px;
 }
 
 .hero-content h1 span {
-    color: #facc15;
+    color: #fbbf24;
 }
 
 /* ================= SUBTEXT ================= */
 .hero-subtext {
     font-size: 18px;
-    max-width: 600px;
-    margin-bottom: 25px;
-    opacity: 0.95;
+    max-width: 620px;
+    margin-bottom: 26px;
+    opacity: 0.96;
 }
 
 /* ================= BONUS STRIP ================= */
 .bonus-strip {
     display: inline-block;
-    background-color: rgba(250, 204, 21, 0.15);
-    border-left: 4px solid #facc15;
+    background-color: rgba(251, 191, 36, 0.15);
+    border-left: 4px solid #fbbf24;
     padding: 12px 16px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     font-size: 16px;
 }
 
 /* ================= CTA BUTTON ================= */
 .primary-cta {
     display: inline-block;
-    background-color: #7c2d12;
+    background-color: #8b1e24;
     color: #ffffff;
-    padding: 16px 34px;
+    padding: 16px 36px;
     font-size: 18px;
     text-decoration: none;
     border-radius: 6px;
@@ -89,24 +89,30 @@ body {
 }
 
 .primary-cta:hover {
-    background-color: #9a3412;
+    background-color: #a3262c;
 }
 
 /* ================= CTA NOTE ================= */
 .cta-note {
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 12px;
     opacity: 0.85;
 }
 
-/* ================= TRUST MINI SECTION ================= */
-.trust-mini {
+/* ================= TRUST BAR ================= */
+.trust-bar {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    padding: 18px 20px;
+}
+
+.trust-items {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 20px;
     font-size: 14px;
-    background-color: #eef0ea;
     color: #374151;
 }
 
@@ -127,7 +133,7 @@ body {
         font-size: 16px;
     }
 
-    .trust-mini {
+    .trust-items {
         flex-direction: column;
         gap: 10px;
         text-align: center;
