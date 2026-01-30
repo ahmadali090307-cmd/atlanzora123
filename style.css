@@ -138,4 +138,28 @@ body {
         gap: 10px;
         text-align: center;
     }
+    /* ================= HISTORICAL HIGHLIGHT ================= */
+.history-highlight {
+    max-width: 620px;
+    margin-bottom: 28px;
+    padding-left: 18px;
+    border-left: 4px solid rgba(251, 191, 36, 0.8);
 }
+
+.history-highlight p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #ffffff;
+    opacity: 0.95;
+}
+
+/* Emphasized line */
+.history-emphasis {
+    font-weight: 600;
+    font-size: 18px;
+    color: #fbbf24;
+}
+
+}
+
