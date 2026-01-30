@@ -138,28 +138,31 @@ body {
         gap: 10px;
         text-align: center;
     }
-    /* ================= HISTORICAL HIGHLIGHT ================= */
+/* ================= HISTORICAL HIGHLIGHT ================= */
 .history-highlight {
-    max-width: 620px;
-    margin-bottom: 28px;
-    padding-left: 18px;
-    border-left: 4px solid rgba(251, 191, 36, 0.8);
+    max-width: 640px;
+    margin-bottom: 26px;
+    padding: 18px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-left: 4px solid #fbbf24;
+    border-radius: 4px;
 }
 
 .history-highlight p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 12px;
+    margin: 0 0 10px 0;
     color: #ffffff;
-    opacity: 0.95;
 }
 
-/* Emphasized line */
+/* Strong emphasis line */
 .history-emphasis {
     font-weight: 600;
-    font-size: 18px;
     color: #fbbf24;
+    margin-bottom: 0;
 }
 
+
 }
+
 
