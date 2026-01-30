@@ -1,4 +1,4 @@
-/* ================= GLOBAL RESET ================= */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
@@ -6,33 +6,33 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ================= BODY ================= */
 body {
-    background-color: #f4f6f8;
+    background-color: #f3f4f6;
     color: #1f2933;
 }
 
-/* ================= HERO BANNER ================= */
-.hero-banner {
-    min-height: 92vh;
+/* ================= HERO SECTION ================= */
+.hero {
+    min-height: 95vh;
     background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
     background-size: cover;
     background-position: center;
-    position: relative;
 }
 
-/* ================= HERO OVERLAY ================= */
-.hero-overlay {
-    min-height: 92vh;
+/* ================= OVERLAY ================= */
+.overlay {
+    min-height: 95vh;
     background: linear-gradient(
-        rgba(18, 32, 47, 0.78),
-        rgba(18, 32, 47, 0.78)
+        rgba(15, 32, 39, 0.8),
+        rgba(15, 32, 39, 0.8)
     );
     display: flex;
     align-items: center;
 }
 
-/* ================= HERO CONTENT ================= */
-.hero-content {
+/* ================= CONTENT ================= */
+.content {
     max-width: 760px;
     padding: 40px 20px;
     margin-left: 8%;
@@ -40,7 +40,7 @@ body {
 }
 
 /* ================= TRUST LINE ================= */
-.trust-line {
+.trust {
     font-size: 14px;
     letter-spacing: 0.4px;
     opacity: 0.9;
@@ -48,67 +48,73 @@ body {
 }
 
 /* ================= HEADLINE ================= */
-.hero-content h1 {
+h1 {
     font-size: 44px;
     line-height: 1.15;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
-.hero-content h1 span {
+h1 span {
     color: #fbbf24;
 }
 
-/* ================= SUBTEXT ================= */
-.hero-subtext {
+/* ================= HISTORY HIGHLIGHT ================= */
+.history-box {
+    background: rgba(255, 255, 255, 0.12);
+    border-left: 5px solid #fbbf24;
+    padding: 20px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+
+.history-box p {
     font-size: 18px;
-    max-width: 620px;
-    margin-bottom: 26px;
-    opacity: 0.96;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: #ffffff;
 }
 
-/* ================= BONUS STRIP ================= */
-.bonus-strip {
-    display: inline-block;
-    background-color: rgba(251, 191, 36, 0.15);
-    border-left: 4px solid #fbbf24;
-    padding: 12px 16px;
-    margin-bottom: 28px;
+.history-box .emphasis {
+    font-weight: 600;
+    color: #fbbf24;
+    margin-bottom: 0;
+}
+
+/* ================= BONUS ================= */
+.bonus {
     font-size: 16px;
+    margin-bottom: 26px;
+    opacity: 0.95;
 }
 
-/* ================= CTA BUTTON ================= */
-.primary-cta {
+/* ================= CTA ================= */
+.cta {
     display: inline-block;
     background-color: #8b1e24;
     color: #ffffff;
-    padding: 16px 36px;
+    padding: 16px 38px;
     font-size: 18px;
     text-decoration: none;
     border-radius: 6px;
     transition: 0.3s ease;
 }
 
-.primary-cta:hover {
+.cta:hover {
     background-color: #a3262c;
 }
 
-/* ================= CTA NOTE ================= */
-.cta-note {
+/* ================= NOTE ================= */
+.note {
     font-size: 14px;
     margin-top: 12px;
     opacity: 0.85;
 }
 
-/* ================= TRUST BAR ================= */
-.trust-bar {
+/* ================= TRUST STRIP ================= */
+.trust-strip {
     background-color: #ffffff;
     border-top: 1px solid #e5e7eb;
-    padding: 18px 20px;
-}
-
-.trust-items {
-    max-width: 1200px;
-    margin: auto;
+    padding: 18px;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -119,50 +125,23 @@ body {
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
 
-    .hero-content {
+    .content {
         margin-left: 0;
         text-align: center;
         max-width: 100%;
     }
 
-    .hero-content h1 {
+    h1 {
         font-size: 32px;
     }
 
-    .hero-subtext {
+    .history-box p {
         font-size: 16px;
     }
 
-    .trust-items {
+    .trust-strip {
         flex-direction: column;
         gap: 10px;
         text-align: center;
     }
-/* ================= HISTORICAL HIGHLIGHT ================= */
-.history-highlight {
-    max-width: 640px;
-    margin-bottom: 26px;
-    padding: 18px 20px;
-    background: rgba(255, 255, 255, 0.08);
-    border-left: 4px solid #fbbf24;
-    border-radius: 4px;
 }
-
-.history-highlight p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 0 0 10px 0;
-    color: #ffffff;
-}
-
-/* Strong emphasis line */
-.history-emphasis {
-    font-weight: 600;
-    color: #fbbf24;
-    margin-bottom: 0;
-}
-
-
-}
-
-
